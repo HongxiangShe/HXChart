@@ -34,8 +34,8 @@
     
     HXChart *chart = [[HXChart alloc] init];
     chart.dataSource = self;
-    chart.showXLine = NO;
-    chart.showYLine = NO;
+    chart.showXLine = YES;
+    chart.showYLine = YES;
     self.chart = chart;
     chart.frame = self.contentView.bounds;
     [self.contentView addSubview:chart];
@@ -83,7 +83,7 @@
 }
 
 - (CGRange)rangeForYAsisInChart:(HXChart *)chart {
-    return CGRangeMake(1.80, 0.80, 18);
+    return CGRangeMake(1.20, 0.80, 12);
 }
 
 /**
